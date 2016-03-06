@@ -1,0 +1,38 @@
+<div class="container" ng-cloak>
+    <div class="row">
+        <div class="col-lg-12" ng-hide="weatherCtrl.permission || weatherCtrl.weather.name">
+            <div id="noGeolocationHeader" class="col-lg-12 text-center">
+                Enter a PostCode or Country to get your local weather information
+            </div>
+            <div class="col-lg-3"></div>
+            <form name="noGeolocationForm" ng-submit="weatherCtrl.update()">
+                <div class="col-lg-2">
+                    <input name="postCode" class="form-control" ng-model="weatherCtrl.postCode" placeholder="PostCode">
+                </div>
+                <div class="col-lg-4">
+                    <input name="country" class="form-control" ng-model="weatherCtrl.country" placeholder="Country">
+                </div>
+                <input type="submit" value="Update">
+            </form>
+            <div class="col-lg-3"></div>
+        </div>
+        <div class="col-lg-12" ng-show="weatherCtrl.weather.name">
+            <div id="cityName" class="col-lg-12 text-center">{{weatherCtrl.weather.name}}</div>
+            <div id="dateTime" class="col-lg-12 text-center">{{weatherCtrl.weather.dateTimeFormatted()}}</div>
+            <div class="col-lg-6 text-right">
+                <div id="weatherDesc">
+                    {{weatherCtrl.weather.weather.description}}
+                </div>
+                <img id="weatherIcon" ng-src="{{weatherCtrl.weather.iconUrl}}"/>
+            </div>
+            <div class="col-lg-6 text-left">
+                <div id="currentTemperature">{{weatherCtrl.weather.main.current}} &#8457;</div>
+                <div id="highLow">High: {{weatherCtrl.weather.main.max}} &#8457; | Low: {{weatherCtrl.weather.main.min}} &#8457;</div>
+            </div>
+            <div class="col-lg-12">
+                <div class="weatherExtra col-lg-6 text-right">Humidity: {{weatherCtrl.weather.main.humidity}}%</div>
+                <div class="weatherExtra col-lg-6 text-left">Wind Speed: {{weatherCtrl.weather.wind.speed}}mph</div>
+            </div>
+        </div>
+    </div>
+</div>

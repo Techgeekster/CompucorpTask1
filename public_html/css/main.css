@@ -1,0 +1,38 @@
+/*Main*/
+/*Blue Background*/
+.blueBackgroundHeaderGradient {
+    background: #0AE5F5; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#0AE5F5, #0AA7F5); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#0AE5F5, #0AA7F5); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#0AE5F5, #0AA7F5); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#0AE5F5, #0AA7F5); /* Standard syntax */
+}
+
+.btn.btn-default.blueBackgroundGradient,
+.blueBackgroundGradient {
+    background: #0AE5F5; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#0AA7F5, #0AE5F5, #0AA7F5); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#0AA7F5, #0AE5F5, #0AA7F5); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#0AA7F5, #0AE5F5, #0AA7F5); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#0AA7F5, #0AE5F5, #0AA7F5); /* Standard syntax */
+}
+
+div .btn.btn-defaultblueBackgroundGradient:active:hover,
+div .btn.btn-default.blueBackgroundGradient.active:hover,
+div .open > .dropdown-toggle.btn.btn-defaultblueBackgroundGradient:hover,
+div .btn.btn-default.blueBackgroundGradient:active:focus,
+div .btn.btn-default.blueBackgroundGradient.active:focus,
+div .open > .dropdown-toggle.btn.btn-defaultblueBackgroundGradient:focus,
+div .btn.btn-default.blueBackgroundGradient:active.focus,
+div .btn.btn-default.blueBackgroundGradient.active.focus,
+div .open > .dropdown-toggle.btn.btn-defaultblueBackgroundGradient.focus
+{
+    background: #0AA7F5;
+}
+/*End Blue Background*/
+
+/*Header*/
+#siteHeader {
+    font-size: 50px;
+    font-weight: bold;
+}

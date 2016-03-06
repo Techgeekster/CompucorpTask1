@@ -1,0 +1,45 @@
+/*Weather*/
+
+#noGeolocationHeader {
+    font-size: 25px;
+    margin: 25px;
+}
+
+#cityName {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+#dateTime {
+    font-size: 20px;
+}
+
+#currentTemperature {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-left: 35px;
+}
+
+#weatherDesc {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: -15px;
+    margin-right: 25px;
+}
+
+#weatherIcon {
+    min-height: 100px;
+}
+
+.weatherExtra {
+    font-size: 15px;
+    margin-top: -15px;
+}
+
+#highLow {
+    font-size: 15px;
+}
